@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Arturo Badill">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Calculadora Practica js</title>
+</head>
+<body>
+    <div class="contenedor">
+        <h1>CALCULADORA</h1>       
+        <form action="">
+            <div>
+                <input type="button"  value="Suma + "class="boton-operacion" onclick="suma();">
+                <input type="button" value="Resta -" class="boton-operacion" onclick="resta();">
+                <input type="button" value="División / " class="boton-operacion" onclick="division();">
+                <input type="button" value="Multiplicacion x" class="boton-operacion" onclick="multiplicacion();">
+                <input type="button" value="Potencia **" class="boton-operacion" onclick="potencia();">
+            </div>
+            <br>
+            <div class="flex">
+                <div class="valores">
+                    <p>Numero 1:</p>
+                    <input type="number" id="numero1" placeholder="Ingresa el número 1">
+                    <p>Numero 2:</p>
+                    <input type="number" id="numero2" placeholder="Ingresa el número 2">
+                    <p>Resultado</p>
+                    <input type="text" id="resultado" readonly aria-readonly="true">
+                </div>
+               
+            </div>
+            <input type="button" value="Limpiar" class="btn btn-limpiar" onclick="limpiar();">
+        </form>
+    </div>
+</body>
+    <script src="js/script.js"></script>
+</html>
