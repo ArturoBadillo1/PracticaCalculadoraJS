@@ -31,8 +31,8 @@ function division(){
     }
 }
 function multiplicacion(){
-    var num1 = parseFloat(document.getElementById('numero1').value);
-    var num2 = parseFloat(document.getElementById('numero2').value);
+    var num1 = parseFloat(document.getElementById('n1').value);
+    var num2 = parseFloat(document.getElementById('n2').value);
     var r = num1 * num2;
     if(isNaN(r)){
         document.getElementById('r').value = "Error de Operación";
@@ -41,8 +41,8 @@ function multiplicacion(){
     }
 }
 function potencia(){
-    var num1 = parseFloat(document.getElementById('numero1').value);
-    var num2 = parseFloat(document.getElementById('numero2').value);
+    var num1 = parseFloat(document.getElementById('n1').value);
+    var num2 = parseFloat(document.getElementById('n2').value);
     var r = num1 ** num2;
     if(isNaN(r)){
         document.getElementById('r').value = "Error de Operación...";
@@ -52,7 +52,7 @@ function potencia(){
 }
 
 function limpiar (){
-    document.getElementById('numero1').value = null;
-    document.getElementById('numero2').value = null;
+    document.getElementById('n1').value = null;
+    document.getElementById('n2').value = null;
     document.getElementById('r').value = null;
 }
