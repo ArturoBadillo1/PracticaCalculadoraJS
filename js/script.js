@@ -47,7 +47,7 @@ function potencia(){
     if(isNaN(r)){
         document.getElementById('r').value = "Error de Operación...";
     }else{
-        document.getElementById('r').value = resultado;
+        document.getElementById('r').value = r;
     }
 }
 
